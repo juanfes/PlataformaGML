@@ -4,19 +4,35 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\sndHongo</sound>
+    <sound>sound\sndDead</sound>
+    <sound>sound\sndMatarEnemigo</sound>
+    <sound>sound\sndFinNivel</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\sprBall</sprite>
     <sprite>sprites\sprBlock</sprite>
+    <sprite>sprites\sprJump</sprite>
+    <sprite>sprites\sprEnemigoPisoDer</sprite>
+    <sprite>sprites\sprEnemigoPisoIz</sprite>
+    <sprite>sprites\sprEnemigoVoladorDer</sprite>
+    <sprite>sprites\sprEnemigoVoladorIz</sprite>
+    <sprite>sprites\sprColeccionables</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\objBall</object>
     <object>objects\objBlock</object>
+    <object>objects\objJump</object>
+    <object>objects\objEnemigoPiso</object>
+    <object>objects\objEnemigoVolador</object>
+    <object>objects\objColeccionables</object>
+    <object>objects\objInicio</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room0</room>
+    <room>rooms\nivelPrueba</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
