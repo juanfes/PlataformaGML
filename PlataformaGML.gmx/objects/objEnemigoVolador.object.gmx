@@ -30,6 +30,7 @@
 dir = -1;
 hsp = 0;
 movespeed = 4;
+vidas = 5;
 
 //image_speed = 0;
 </string>
@@ -89,11 +90,11 @@ x += hsp;
             <kind>1</kind>
             <string>/// Colisión con el personaje
 
-if (place_meeting (x, y, objBall)){
+if (place_meeting (x, y, objJugador)){
     lives -=1;
     if (lives &gt; 0){
-            objBall.x = objBall.xstart;
-            objBall.y = objBall.ystart;                
+            objJugador.x = objJugador.xstart;
+            objJugador.y = objJugador.ystart;                
     }
     else{
         game_restart();
@@ -125,6 +126,36 @@ if (dir = -1) {sprite_index = sprEnemigoVoladorIz;}
 
 
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="objBalas">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>vidas --;
+if (vidas &lt;= 0){
+    instance_destroy();
+    audio_play_sound(sndMatarEnemigo, 10, false);
+    score+= 10;
+}
+
+with(other){instance_destroy();}
 </string>
           </argument>
         </arguments>

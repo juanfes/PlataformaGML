@@ -11,7 +11,8 @@
     <sound>sound\sndFinNivel</sound>
   </sounds>
   <sprites name="sprites">
-    <sprite>sprites\sprBall</sprite>
+    <sprite>sprites\sprJugadorDer</sprite>
+    <sprite>sprites\sprJugadorIz</sprite>
     <sprite>sprites\sprBlock</sprite>
     <sprite>sprites\sprJump</sprite>
     <sprite>sprites\sprEnemigoPisoDer</sprite>
@@ -19,17 +20,24 @@
     <sprite>sprites\sprEnemigoVoladorDer</sprite>
     <sprite>sprites\sprEnemigoVoladorIz</sprite>
     <sprite>sprites\sprColeccionables</sprite>
+    <sprite>sprites\sprBalas</sprite>
+    <sprite>sprites\sprPowerUpBalas</sprite>
+    <sprite>sprites\sprSpeed</sprite>
+    <sprite>sprites\sprPowerupInvisible</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <objects name="objects">
-    <object>objects\objBall</object>
+    <object>objects\objJugador</object>
     <object>objects\objBlock</object>
     <object>objects\objJump</object>
+    <object>objects\objPowerUpBalas</object>
+    <object>objects\objColeccionables</object>
     <object>objects\objEnemigoPiso</object>
     <object>objects\objEnemigoVolador</object>
-    <object>objects\objColeccionables</object>
+    <object>objects\objBalas</object>
     <object>objects\objInicio</object>
+    <object>objects\objSpeed</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\nivelPrueba</room>

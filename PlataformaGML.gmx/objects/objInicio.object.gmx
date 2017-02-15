@@ -27,6 +27,36 @@
             <kind>1</kind>
             <string>lives = 3;
 score = 0;
+tiempo = 0;
+alarm[0]= 30;
+
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>tiempo += 1;
+alarm[0] = 30;
+
+
 </string>
           </argument>
         </arguments>
@@ -50,10 +80,15 @@ score = 0;
           <argument>
             <kind>1</kind>
             <string>draw_set_colour(c_white);
-draw_text(530, 10, "Puntos: ")
-draw_text(600, 10, score);
-draw_text(350, 10, "Vidas: ")
-draw_text(400, 10, lives);
+draw_text(view_xview[0]+530, 10, "Puntos: ");
+draw_text(view_xview[0]+600, 10, score);
+draw_text(view_xview[0]+350, 10, "Vidas: ");
+draw_text(view_xview[0]+400, 10, lives);
+draw_text(view_xview[0]+100, 10, "Tiempo: ");
+draw_text(view_xview[0]+200, 10, tiempo);
+
+
+
 </string>
           </argument>
         </arguments>
