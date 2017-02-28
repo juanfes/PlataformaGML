@@ -192,7 +192,6 @@ if (place_meeting (x, y + vsp, objBlock)){
 
 y += vsp;   
 
-
 // Animación del personaje
 if (move == 1) {sprite_index = sprJugadorDer;}
 if (move == -1) {sprite_index = sprJugadorIz;}
